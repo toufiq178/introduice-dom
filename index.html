@@ -29,6 +29,33 @@
         <li id="favorite-sobji"> palon sak</li>
     </ul>
 
+
+    <section id="fds">
+        <h1 id="title-food"> foods</h1>
+
+        <ul id="fruits">
+            <li class="fruit">mango <span> i love mango</span></li>
+            <li class="fruit">apple<span> i love apple</span></li>
+            <li class="fruit">orange</li>
+            <li class="fruit">guava<span> i love guava</span></li>
+            <li class="fruit">star fruit</li>
+        </ul>
+    </section>
+    <section id="cnt">
+        <h1 id="title-country"> country</h1>
+
+        <ul id="countrys">
+            <li class="fuit">usa</li>
+            <li class="fuit">brazil</li>
+            <li class="fuit">bangladesh</li>
+            <li class="fuit">italy</li>
+            <li class="fuit">japan</li>
+        </ul>
+    </section>
+
+
+
+
     <script>
         // console.log('hello');
         // console.log('hiii');
@@ -64,9 +91,13 @@
         const fav = document.getElementById('favorite-sobji')
         fav.innerText = 'mula'
         const f = fav.innerText;
-        console.log(f);
+        // console.log(f);
 
-        
+        const spanElt = document.querySelectorAll('#fruits .fruit span');
+        for( const e of  spanElt){
+            console.log(e.innerText);
+            
+        }
         
     </script>
 
