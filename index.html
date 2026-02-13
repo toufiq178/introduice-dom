@@ -14,9 +14,59 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sequi non delectus esse ea et autem incidunt enim recusandae! Asperiores autem vero natus impedit? Ad ducimus perferendis nemo earum facere et quasi aut, unde repudiandae labore a dignissimos quis! Enim.</p>
     </div>
 
+    <h1>hello world  </h1>
+    <h1>welcome here  </h1>
+    <h1>nice to meet you </h1>
+    <h1>good bye </h1>
+
+    <ul>
+        <li class="sobji">gajor</li>
+        <li class="sobji">alu</li>
+        <li class="sobji">potol</li>
+        <li class="sobji">begun</li>
+        <li class="sobji">lau</li>
+
+        <li id="favorite-sobji"> palon sak</li>
+    </ul>
+
     <script>
-        console.log('hello');
-        console.log('hiii');
+        // console.log('hello');
+        // console.log('hiii');
+        
+
+        const student ={
+            name : 'rofi',
+            id : 112 ,
+            study : function (subject) {
+                console.log('studying subject:' , subject);
+                
+            }
+        }
+
+
+        // const pCollection = document.getElementsByTagName('p');
+        // console.log(pCollection);
+        // for(const p of pCollection){
+        //     console.log(p.innerText);
+            
+        // }
+
+
+        const h1Collection = document.getElementsByTagName('h1');
+        for( const h1 of h1Collection){
+            // console.log(h1.innerText);
+            
+        }
+
+        const sobji = document.getElementsByClassName('sobji');
+        // console.log(sobji);
+        
+        const fav = document.getElementById('favorite-sobji')
+        fav.innerText = 'mula'
+        const f = fav.innerText;
+        console.log(f);
+
+        
         
     </script>
 
