@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>introduce of dom</title>
+
+    <style>
+        .big{
+            font-size: 4rem;
+
+        }
+
+        .bold{
+            font-weight: 900;
+        }
+
+        .color{
+            color: blue;
+        }
+        .bg{
+            background-color: chartreuse;
+        }
+    </style>
 </head>
 <body>
     
@@ -53,52 +71,87 @@
         </ul>
     </section>
 
+    <section id="fish">
 
+        <h1 id="fish-title"> Bangladeshi Fish </h1>
+        <p id = "fish-des">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta modi, <span>i like fish</span> dolorem non necessitatibus illum minima labore minus <span>Lorem ipsum dolor sit.</span>maiores quo sequi. Odio distinctio dolores iure nostrum <span> fish is good for health</span>magnam! Quibusdam in harum totam expedita nam consequuntur! Iste doloribus nostrum voluptatum in eius deserunt.
+        </p>
+        <ul class="fish-container">
+            <li class="fish-name"> rui</li>
+            <li class="fish-name"> elish</li>
+            <li class="fish-name"> magur</li>
+            <li class="fish-name"> katla</li>
+        </ul>
+
+    </section>
 
 
     <script>
         // console.log('hello');
         // console.log('hiii');
         
-
-        const student ={
-            name : 'rofi',
-            id : 112 ,
-            study : function (subject) {
-                console.log('studying subject:' , subject);
-                
-            }
+        const fish = document.querySelectorAll('#fish #fish-des span');
+        for( const f of fish){
+            console.log(f.innerText);
+            
         }
 
+        const fish2 = document.querySelector('#fish #fish-des span');
+        console.log(fish2.innerText);
+        
 
-        // const pCollection = document.getElementsByTagName('p');
-        // console.log(pCollection);
-        // for(const p of pCollection){
-        //     console.log(p.innerText);
-            
+        const st = document.querySelector('#fish #fish-des span');
+        const red= st.style.color='red'
+        st.style.padding = '5px'
+        st.style.margin = '10px'
+
+        const s = document.querySelector('#fish .fish-container .fish-name');
+        s.classList.add('big', 'bg' , 'bold' , "color")
+        // console.log(red);
+        
+        // s.getAttribute('id');
+        // console.log(s);
+        const f = document.querySelector('#fish-title');
+        // const student ={
+        //     name : 'rofi',
+        //     id : 112 ,
+        //     study : function (subject) {
+        //         console.log('studying subject:' , subject);
+                
+        //     }
         // }
 
 
-        const h1Collection = document.getElementsByTagName('h1');
-        for( const h1 of h1Collection){
-            // console.log(h1.innerText);
+        // // const pCollection = document.getElementsByTagName('p');
+        // // console.log(pCollection);
+        // // for(const p of pCollection){
+        // //     console.log(p.innerText);
             
-        }
+        // // }
 
-        const sobji = document.getElementsByClassName('sobji');
-        // console.log(sobji);
-        
-        const fav = document.getElementById('favorite-sobji')
-        fav.innerText = 'mula'
-        const f = fav.innerText;
-        // console.log(f);
 
-        const spanElt = document.querySelectorAll('#fruits .fruit span');
-        for( const e of  spanElt){
-            console.log(e.innerText);
+        // const h1Collection = document.getElementsByTagName('h1');
+        // for( const h1 of h1Collection){
+        //     // console.log(h1.innerText);
             
-        }
+        // }
+
+        // const sobji = document.getElementsByClassName('sobji');
+        // // console.log(sobji);
         
+        // const fav = document.getElementById('favorite-sobji')
+        // fav.innerText = 'mula'
+        // const f = fav.innerText;
+        // // console.log(f);
+
+        // const spanElt = document.querySelectorAll('#fruits .fruit span');
+        // for( const e of  spanElt){
+        //     console.log(e.innerText);
+            
+        // }
+    //    const ff = f.setAttribute('fish-title' , 'mach-container')
+    //    log
     </script>
 
     <script src="./js/data.js"></script>
