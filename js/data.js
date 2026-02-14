@@ -20,7 +20,8 @@ console.log(carName);
 // //     cName.style.fontSize = '2rem'
 // // }
 
-const players = document.getElementById('players-Container').innerText   
+// const players = document.getElementById('players-Container');
+
 // console.log(players);
 
 // const sect  = document.getElementsByTagName('section');
@@ -40,3 +41,19 @@ const sections = document.querySelectorAll('section')
 for(const section of sections){
     section.classList.add('section-card')
 }
+
+const players = document.getElementById('container').childNodes[1].childNodes[3].childNodes[1].parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode
+console.log(players);
+
+// 1 create element
+const newChild = document.createElement('li')
+newChild.innerText = 'new child';
+
+// find the parent
+const playerList = document.getElementById('players-Container');
+
+// add the element
+playerList.appendChild(newChild)
+
+
+console.log(newChild);
