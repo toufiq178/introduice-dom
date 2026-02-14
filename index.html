@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>introduce of dom</title>
 
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         .big{
             font-size: 4rem;
@@ -25,7 +26,7 @@
 </head>
 <body>
     
-    <div class="">
+    <!-- <div class="">
         <h1>introduce dom</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam est eveniet.</p>
         <h3>about</h3>
@@ -45,10 +46,10 @@
         <li class="sobji">lau</li>
 
         <li id="favorite-sobji"> palon sak</li>
-    </ul>
+    </ul> -->
 
 
-    <section id="fds">
+    <!-- <section id="fds">
         <h1 id="title-food"> foods</h1>
 
         <ul id="fruits">
@@ -84,35 +85,59 @@
             <li class="fish-name"> katla</li>
         </ul>
 
-    </section>
+    </section> -->
+
+
+    <main>
+        
+        <section id="players-container">
+            <h1 id="players-title">players names</h1>
+            <ul id="players-Container">
+                <li>Messi</li>
+                <li>Neymar</li>
+                <li>Rolando</li>
+                <li>Pele</li>
+            </ul>
+        </section>
+
+        <section id="car-brands">
+            <h1 id="brands-title">car brands</h1>
+            <ul>
+                <li>BMW</li>
+                <li>TESLA</li>
+                <li>LAMBORGHINI</li>
+                <li>BUGATTI</li>
+            </ul>
+        </section>
+    </main>
 
 
     <script>
         // console.log('hello');
         // console.log('hiii');
         
-        const fish = document.querySelectorAll('#fish #fish-des span');
-        for( const f of fish){
-            console.log(f.innerText);
+        // const fish = document.querySelectorAll('#fish #fish-des span');
+        // for( const f of fish){
+        //     console.log(f.innerText);
             
-        }
+        // }
 
-        const fish2 = document.querySelector('#fish #fish-des span');
-        console.log(fish2.innerText);
+        // const fish2 = document.querySelector('#fish #fish-des span');
+        // console.log(fish2.innerText);
         
 
-        const st = document.querySelector('#fish #fish-des span');
-        const red= st.style.color='red'
-        st.style.padding = '5px'
-        st.style.margin = '10px'
+        // const st = document.querySelector('#fish #fish-des span');
+        // const red= st.style.color='red'
+        // st.style.padding = '5px'
+        // st.style.margin = '10px'
 
-        const s = document.querySelector('#fish .fish-container .fish-name');
-        s.classList.add('big', 'bg' , 'bold' , "color")
-        // console.log(red);
+        // const s = document.querySelector('#fish .fish-container .fish-name');
+        // s.classList.add('big', 'bg' , 'bold' , "color")
+        // // console.log(red);
         
-        // s.getAttribute('id');
-        // console.log(s);
-        const f = document.querySelector('#fish-title');
+        // // s.getAttribute('id');
+        // // console.log(s);
+        // const f = document.querySelector('#fish-title');
         // const student ={
         //     name : 'rofi',
         //     id : 112 ,
